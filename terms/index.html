@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rivet & Rune</title>
-  <meta name="description" content="Rivet & Rune">
+  <title>Terms of Service | Rivet & Rune</title>
+  <meta name="description" content="Terms of Service for Rivet & Rune.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,26 +16,23 @@
       --muted: #8ea6c5;
       --line: #1f3652;
       --accent: #5ab4ff;
-      --max: 920px;
-      --radius: 10px;
       --surface-glow: rgba(84, 162, 255, 0.25);
-      --button-bg: #13243a;
       --body-grid: rgba(90, 180, 255, 0.1);
-      --headline-size: clamp(1.95rem, 4.8vw, 3rem);
+      --max: 920px;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      color: var(--ink);
       background: var(--bg);
       background-image:
         linear-gradient(to right, var(--body-grid) 1px, transparent 1px),
         linear-gradient(to bottom, var(--body-grid) 1px, transparent 1px);
       background-size: 32px 32px;
+      color: var(--ink);
       font-family: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     a {
@@ -52,7 +49,7 @@
     .site {
       background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: var(--radius);
+      border-radius: 10px;
       padding: 1.2rem;
       box-shadow: 0 12px 40px -22px var(--surface-glow);
     }
@@ -74,6 +71,16 @@
       letter-spacing: 0.01em;
     }
 
+    .brand a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
     .top-actions {
       display: flex;
       align-items: center;
@@ -87,47 +94,21 @@
       font-size: 0.86rem;
     }
 
-    .hero {
-      padding: 3rem 0 2.4rem;
+    .content {
+      padding: 1.5rem 0 0.2rem;
     }
 
-    .hero h1 {
-      margin: 0;
-      max-width: 620px;
+    h1 {
+      margin: 0 0 0.8rem;
       font-family: "Space Grotesk", "Segoe UI", sans-serif;
-      font-size: var(--headline-size);
-      line-height: 1.06;
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
       letter-spacing: -0.02em;
     }
 
-    .subline {
-      margin: 0.9rem 0 0;
+    p {
+      margin: 0 0 0.7rem;
       color: var(--muted);
-      font-size: 0.95rem;
     }
-
-    .cta {
-      margin-top: 1.2rem;
-      display: inline-block;
-      border: 1px solid var(--line);
-      border-radius: 9px;
-      padding: 0.48rem 0.84rem;
-      text-decoration: none;
-      color: var(--ink);
-      font-size: 0.84rem;
-      background: var(--button-bg);
-    }
-
-    .company {
-      border-top: 1px solid var(--line);
-      padding-top: 1rem;
-      display: grid;
-      gap: 0.45rem;
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
-
-    .company strong { color: var(--ink); }
 
     footer {
       margin-top: 1.4rem;
@@ -156,10 +137,6 @@
         width: 100%;
       }
 
-      .hero {
-        padding-top: 2.1rem;
-      }
-
       footer {
         flex-direction: column;
         align-items: flex-start;
@@ -171,27 +148,26 @@
   <div class="wrap">
     <div class="site">
       <header>
-        <p class="brand">Rivet & Rune</p>
+        <p class="brand"><a href="../">Rivet & Rune</a></p>
         <div class="top-actions">
           <nav aria-label="Primary">
-            <a href="support/">Support</a>
+            <a href="../support/">Support</a>
             <a href="mailto:support@rivetrune.com">Contact</a>
           </nav>
         </div>
       </header>
 
-      <main>
-        <section class="hero">
-          <h1>Tools, software, and games. Built with craft.</h1>
-          <p class="subline">Forging in progress, by wrench and wand.</p>
-          <a class="cta" href="mailto:support@rivetrune.com">Contact</a>
-        </section>
+      <main class="content">
+        <h1>Terms of Service</h1>
+        <p>This site is provided for general information and may change without notice; by using it, you agree to lawful use and accept it is provided "as is."</p>
+        <p>Questions: <a href="mailto:support@rivetrune.com">support@rivetrune.com</a></p>
+        <p>Last updated: March 3, 2026</p>
       </main>
 
       <footer>
         <div class="foot-links">
-          <a href="privacy/">Privacy Policy</a>
-          <a href="terms/">Terms of Service</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Service</a>
         </div>
         <div>Rivet & Rune</div>
       </footer>
